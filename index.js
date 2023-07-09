@@ -28,6 +28,10 @@ const bubbleMaker = () => {
     setTimeout( () => {
         bubble.remove()
     }, 8000 ); 
+
+    if (counter>2){
+        counterDisplay.textContent="YOU WON !"
+    }
 }
 
 setInterval(bubbleMaker, 300);    
